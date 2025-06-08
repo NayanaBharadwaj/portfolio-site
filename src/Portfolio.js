@@ -23,14 +23,17 @@ export default function Portfolio() {
       <section id="projects">
         <h2 style={{ textAlign: "center" }}>Featured Projects</h2>
         <div style={{ display: "grid", gap: "1rem", gridTemplateColumns: "1fr" }}>
-          <ProjectCard
-            title="Sound Event Detection - Data Science"
-            description={`• Designed lightweight SED models (CNN, CRNN, Transformer) using UrbanSound8K dataset.
-                          • CRNN achieved best accuracy (≈90%) with minimal parameters (175K), optimal for edge devices.
-                          • Conducted trade-off analysis: accuracy vs. computational cost (memory, GFLOPs) for each model.
-                          • Addressed real-world deployment: energy efficiency, interpretability, and real-time responsiveness.`}
-            techStack="Python, CNN, CRNN, Transformer, UrbanSound8K, Lightweight Deep Learning"
-          />
+          <ProjectCard 
+           title="Sound Event Detection - Data Science"
+           techStack="Python, CNN, CRNN, Transformer, UrbanSound8K, Lightweight Deep Learning"
+          >
+           <ul>
+              <li> Designed lightweight SED models (CNN, CRNN, Transformer) using UrbanSound8K dataset.
+              <li> CRNN achieved best accuracy (≈90%) with minimal parameters (175K), optimal for edge devices.
+              <li> Conducted trade-off analysis: accuracy vs. computational cost (memory, GFLOPs) for each model.
+              <li> Addressed real-world deployment: energy efficiency, interpretability, and real-time responsiveness.
+              </ul>
+          </ProjectCard>
           <ProjectCard
             title="Secure Chat System - Security and Resilience"
             description={`• Developed a secure, real-time chat app using FastAPI, WebSockets, PostgreSQL, Redis, Docker Compose, Prometheus, ReactJS.
