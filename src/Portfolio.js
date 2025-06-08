@@ -37,58 +37,86 @@ export default function Portfolio() {
           />
           <ProjectCard
             title="Secure Chat System - Security and Resilience"
-            description={`• Developed a secure, real-time chat app using FastAPI, WebSockets, PostgreSQL, Redis, Docker Compose, Prometheus, ReactJS.
-                          • Implemented end-to-end encryption, secure file sharing, JWT authentication, and OAuth2 login.
-                          • Achieved modular deployment with Docker Compose; Prometheus used for real-time monitoring.
-                          • Demonstrated robustness under concurrent load; identified optimization needs for high concurrency.`}
+            description={
+              <p>
+              • Developed a secure, real-time chat app using FastAPI, WebSockets, PostgreSQL, Redis, Docker Compose, Prometheus, ReactJS.<br />
+              • Implemented end-to-end encryption, secure file sharing, JWT authentication, and OAuth2 login.<br />
+              • Achieved modular deployment with Docker Compose; Prometheus used for real-time monitoring.<br />
+              • Demonstrated robustness under concurrent load; identified optimization needs for high concurrency.
+              </p>
+            }
             techStack="FastAPI, WebSockets, PostgreSQL, Redis, Docker Compose, Prometheus, ReactJS, JWT, OAuth2"
           />
           <ProjectCard
             title="Political Bias Detection"
-            description={`• Built a sentiment analysis system to detect political bias using Twitter data and NLP techniques.
-                          • Applied Naive Bayes, KNN, and SVM classifiers on unigram features; classified tweets into positive, negative, neutral.
-                          • Executed extensive tweet preprocessing (normalization, stopword removal, token reduction) for model training.
-                          • Utilized supervised learning and visualization to predict public sentiment towards Indian political parties.`}
+            description={
+              <p>
+              • Built a sentiment analysis system to detect political bias using Twitter data and NLP techniques.<br />
+              • Applied Naive Bayes, KNN, and SVM classifiers on unigram features; classified tweets into positive, negative, neutral.<br />
+              • Executed extensive tweet preprocessing (normalization, stopword removal, token reduction) for model training.<br />
+              • Utilized supervised learning and visualization to predict public sentiment towards Indian political parties.
+              </p>
+            }
             techStack="Python, NLP, Sentiment Analysis, Naive Bayes, SVM, KNN, Tweepy, Text Preprocessing"
           />
           <ProjectCard
             title="Backlog Manager – Android App"
-            description={`• Developed an Android app to streamline backlog tracking for students and faculty using Firebase backend.
-                          • Implemented modular roles: Admin manages users and subjects, Faculty uploads assignments and quizzes, Students view activity.
-                          • Used XML for frontend and Firebase for real-time database; supported multi-user login and assignment management.
-                          • Enhanced communication, reduced manual efforts, and optimized backlog process transparency in academic workflows.`}
+            description={
+              <p>
+              • Developed an Android app to streamline backlog tracking for students and faculty using Firebase backend.<br />
+              • Implemented modular roles: Admin manages users and subjects, Faculty uploads assignments and quizzes, Students view activity.<br />
+              • Used XML for frontend and Firebase for real-time database; supported multi-user login and assignment management.<br />
+              • Enhanced communication, reduced manual efforts, and optimized backlog process transparency in academic workflows.
+              </p>
+              }
             techStack="Android Studio, XML, Firebase, Mobile App Development, Firebase Realtime DB"
           />
           <ProjectCard
             title="Inventory Management System - DBMS"
-            description={`• Built a desktop-based inventory system using .NET and SQLite to manage stock, sales, and purchases efficiently.
-                          • Implemented admin/employee roles for adding, editing, and managing categories, products, brands, and orders.
-                          • Automated stock tracking and order processing, reducing manual errors and improving operational visibility.
-                          • Used HTML for frontend and MySQL for backend; incorporated data validation, schema design, and functional testing. `}
+            description={
+              <p>
+              • Built a desktop-based inventory system using .NET and SQLite to manage stock, sales, and purchases efficiently.<br />
+              • Implemented admin/employee roles for adding, editing, and managing categories, products, brands, and orders.<br />
+              • Automated stock tracking and order processing, reducing manual errors and improving operational visibility.<br />
+              • Used HTML for frontend and MySQL for backend; incorporated data validation, schema design, and functional testing. 
+              </p>
+              }
             techStack="HTML, CSS, MySQL, SQLite, .NET, Visual Studio, SQL Queries, Inventory Management"
           />
           <ProjectCard
             title="Music Library - Object-Oriented Programming"
-            description={`• Engineered a Java-based digital music library with CRUD functionalities for artists, albums, and tracks.
-                          • Implemented classes for compilation albums, JSON-based data input, and track search/rating analysis.
-                          • Enabled album-level analytics (file size, duration, rating) and advanced track filtering features.
-                          • Demonstrated principles of OOP: encapsulation, inheritance (e.g., CompilationAlbum), and modular design.`}
+            description={
+              <p>
+              • Engineered a Java-based digital music library with CRUD functionalities for artists, albums, and tracks.<br />
+              • Implemented classes for compilation albums, JSON-based data input, and track search/rating analysis.<br />
+              • Enabled album-level analytics (file size, duration, rating) and advanced track filtering features.<br />
+              • Demonstrated principles of OOP: encapsulation, inheritance (e.g., CompilationAlbum), and modular design.
+              </p>
+              }
             techStack="Java, OOP, JSON, Compilation Album, Track Analytics"
           />
           <ProjectCard
             title="Scalable Kubernetes-based Web Application with Observability on Azure - Cloud Computing"
-            description={`• Deployed Kubernetes-based web app and dashboard on Azure; configured NodePort for access.
-                          • Built and integrated a Dockerized load generator for benchmarking web applications.
-                          • Implemented full observability stack (Prometheus, Metrics Server, Grafana); real-time CPU/memory insights.
-                          • Enabled local image registry and load-tested services with real-time Grafana monitoring.`}
+            description={
+              <p>
+              • Deployed Kubernetes-based web app and dashboard on Azure; configured NodePort for access.<br />
+              • Built and integrated a Dockerized load generator for benchmarking web applications.<br />
+              • Implemented full observability stack (Prometheus, Metrics Server, Grafana); real-time CPU/memory insights.<br />
+              • Enabled local image registry and load-tested services with real-time Grafana monitoring.
+              </p>
+              }
             techStack="Kubernetes, Docker, Azure, Prometheus, Grafana, Microk8s, NodePort, Load Generator (Python)"
           />
           <ProjectCard
             title="Smart Urban Air Quality Monitoring and Prediction System - IOT"
-            description={`• Built a 3-tier IoT architecture (Edge, Cloud, IoT) using real-world PM2.5 data from Newcastle Urban Observatory.
-                          • Developed Docker-based edge services for data injection, preprocessing, and asynchronous MQTT-based communication.
-                          • Implemented machine learning prediction and real-time data visualization pipeline using RabbitMQ and cloud-based services.
-                          • Designed efficient data cleaning, reformatting, and aggregation workflows to enable smart urban insights.`}
+            description={
+              <p>
+              • Built a 3-tier IoT architecture (Edge, Cloud, IoT) using real-world PM2.5 data from Newcastle Urban Observatory.<br />
+              • Developed Docker-based edge services for data injection, preprocessing, and asynchronous MQTT-based communication.<br />
+              • Implemented machine learning prediction and real-time data visualization pipeline using RabbitMQ and cloud-based services.<br />
+              • Designed efficient data cleaning, reformatting, and aggregation workflows to enable smart urban insights.
+              </p>
+              }
             techStack="Python, Docker, MQTT (EMQX), RabbitMQ, Machine Learning, JSON, Azure, Visualization tools"
           />
         </div>
