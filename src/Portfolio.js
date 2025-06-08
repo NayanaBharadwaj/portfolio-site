@@ -26,14 +26,15 @@ export default function Portfolio() {
           <ProjectCard 
            title="Sound Event Detection - Data Science"
            techStack="Python, CNN, CRNN, Transformer, UrbanSound8K, Lightweight Deep Learning"
-          >
-           <ul>
-              <li> Designed lightweight SED models (CNN, CRNN, Transformer) using UrbanSound8K dataset.
-              <li> CRNN achieved best accuracy (≈90%) with minimal parameters (175K), optimal for edge devices.
-              <li> Conducted trade-off analysis: accuracy vs. computational cost (memory, GFLOPs) for each model.
-              <li> Addressed real-world deployment: energy efficiency, interpretability, and real-time responsiveness.
-              </ul>
-          </ProjectCard>
+           description={
+            <>
+           • Designed lightweight SED models (CNN, CRNN, Transformer) using UrbanSound8K dataset.<br />
+           • CRNN achieved best accuracy (≈90%) with minimal parameters (175K), optimal for edge devices.<br />
+           • Conducted trade-off analysis: accuracy vs. computational cost (memory, GFLOPs) for each model.<br />
+           • Addressed real-world deployment: energy efficiency, interpretability, and real-time responsiveness.
+            </>
+          }
+          />
           <ProjectCard
             title="Secure Chat System - Security and Resilience"
             description={`• Developed a secure, real-time chat app using FastAPI, WebSockets, PostgreSQL, Redis, Docker Compose, Prometheus, ReactJS.
