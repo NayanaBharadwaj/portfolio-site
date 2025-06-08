@@ -27,12 +27,12 @@ export default function Portfolio() {
            title="Sound Event Detection - Data Science"
            techStack="Python, CNN, CRNN, Transformer, UrbanSound8K, Lightweight Deep Learning"
            description={
-            <>
+          <p>
            • Designed lightweight SED models (CNN, CRNN, Transformer) using UrbanSound8K dataset.<br />
            • CRNN achieved best accuracy (≈90%) with minimal parameters (175K), optimal for edge devices.<br />
            • Conducted trade-off analysis: accuracy vs. computational cost (memory, GFLOPs) for each model.<br />
            • Addressed real-world deployment: energy efficiency, interpretability, and real-time responsiveness.
-            </>
+          </p>
           }
           />
           <ProjectCard
