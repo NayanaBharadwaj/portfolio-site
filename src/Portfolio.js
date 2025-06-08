@@ -19,6 +19,28 @@ export default function Portfolio() {
           <a href="https://www.linkedin.com/in/nayana-a-d-06761614a/">LinkedIn</a>
         </div>
       </section>
+      <section id="experience" style={{ marginBottom: "2rem" }}>
+  <h2 style={{ textAlign: "center", marginBottom: "1rem" }}>Professional Experience</h2>
+
+  <div style={{ marginBottom: "1.5rem" }}>
+    <h3>Systems Engineer – Infosys Ltd., Mysore, India</h3>
+    <p><em>June 2021 – September 2022</em></p>
+    <ul>
+      <li>Developed and deployed a Python-based sales information platform on GCP, reducing report generation time by 30% and improving data access efficiency.</li>
+      <li>Analysed internal datasets using SQL and HQL to identify process bottlenecks, contributing to optimised reporting and decision-making systems.</li>
+      <li>Collaborated within agile teams to design and deliver modular backend solutions that improved system performance and reporting accuracy.</li>
+    </ul>
+  </div>
+
+  <div>
+    <h3>Web Development Intern – Invenger Technologies, Mangalore, India</h3>
+    <p><em>June 2019 – July 2019</em></p>
+    <ul>
+      <li>Built a functional job portal using Java, Bootstrap, HTML/CSS, and PostgreSQL with a focus on accessibility and secure user interactions.</li>
+      <li>Designed front-end interfaces and implemented backend CRUD operations to streamline user navigation and data handling.</li>
+    </ul>
+  </div>
+</section>
 
       <section id="projects">
         <h2 style={{ textAlign: "center" }}>Featured Projects</h2>
