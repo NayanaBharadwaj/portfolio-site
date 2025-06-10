@@ -1,5 +1,64 @@
 import React from "react";
 
+function TestimonialCarousel() {
+  const testimonials = [
+    {
+      quote: "Nayana supported us with detailed documentation and KT even while unwell. Her transition efforts and clarity saved the team during a critical recovery phase.",
+      author: "Project Lead, Infosys"
+    },
+    {
+      quote: "You clarified and rebuilt OSO’s core process with precision. This was the most unstable area — and now it’s one of our most reliable. Thank you.",
+      author: "Global Client, Japan"
+    },
+    {
+      quote: "You are one of the upcoming emerging leaders. Great to see your work reinstating client confidence.",
+      author: "Senior Manager, Infosys"
+    },
+    {
+      quote: "Hardworking, cheerful, and always learning — Nayana gave 100% on every task. Even the clients noticed her commitment.",
+      author: "Senior Consultant, Infosys"
+    }
+  ];
+
+  const [index, setIndex] = React.useState(0);
+
+  const next = () => setIndex((index + 1) % testimonials.length);
+  const prev = () => setIndex((index - 1 + testimonials.length) % testimonials.length);
+
+  return (
+    <section style={{ textAlign: "center", margin: "3rem 0", background: "#f4f8ff", padding: "2rem 1rem", borderRadius: "12px" }}>
+      <h2>What Others Say</h2>
+      <div style={cardStyle}>
+        <p style={{ fontStyle: "italic" }}>"{testimonials[index].quote}"</p>
+        <p style={{ color: "#555" }}>— {testimonials[index].author}</p>
+      </div>
+      <div style={{ marginTop: "1rem" }}>
+        <button onClick={prev} style={navBtnStyle}>⟨</button>
+        <button onClick={next} style={navBtnStyle}>⟩</button>
+      </div>
+    </section>
+  );
+}
+
+const cardStyle = {
+  maxWidth: "700px",
+  margin: "0 auto",
+  background: "#f9f9f9",
+  padding: "1.5rem",
+  borderRadius: "10px",
+  boxShadow: "0 2px 6px rgba(0,0,0,0.1)"
+};
+
+const navBtnStyle = {
+  background: "#eee",
+  border: "none",
+  margin: "0 0.5rem",
+  padding: "0.5rem 1rem",
+  fontSize: "1.2rem",
+  cursor: "pointer",
+  borderRadius: "5px"
+};
+
 export default function Portfolio() {
   return (
     <main style={{ padding: "2rem", fontFamily: "Arial, sans-serif" }}>
@@ -41,6 +100,8 @@ export default function Portfolio() {
     </ul>
   </div>
 </section>
+
+<TestimonialCarousel />
 
       <section id="projects">
         <h2 style={{ textAlign: "center" }}>Featured Projects</h2>
@@ -143,6 +204,17 @@ export default function Portfolio() {
           />
         </div>
       </section>
+              
+    <section>
+    <h2>Education</h2>
+    <p><strong>MSc in Advanced Computer Science</strong><br />Newcastle University, UK — Nov 2024</p>
+    <p><strong>B.E. in Information Science</strong><br />Malnad College of Engineering, India — Oct 2020</p>
+   </section>
+
+    <a href="/Nayana_Resume.pdf" target="_blank" style={{ marginRight: "1rem" }}>
+    Download My Resume
+    </a>
+
     </main>
   );
 }
