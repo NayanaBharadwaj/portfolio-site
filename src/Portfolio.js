@@ -211,7 +211,7 @@ export default function Portfolio() {
     <p><strong>B.E. in Information Science</strong><br />Malnad College of Engineering, India — Oct 2020</p>
    </section>
 
-    <a href="/Nayana_Resume.pdf" target="_blank" style={{ marginRight: "1rem" }}>
+    <a href="/Nayana%20Agrahara%20Dattatri.pdf" target="_blank" style={{ marginRight: "1rem" }}>
     Download My Resume
     </a>
 
